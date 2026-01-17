@@ -1,0 +1,21 @@
+====== Services | Systemctl ======
+
+To see the status of all services, type the following: 
+
+<code>
+sudo systemctl list-units --type=service 
+
+</code> 
+
+To list services by status, type the following: 
+
+<code>
+sudo systemctl list-units --type=service --state=active 
+</code>
+ 
+
+Possible values for --state= include running, stopped, enabled, disabled and failed. 
+
+<code>
+sudo systemctl list-units --failed 
+</code>

@@ -1,0 +1,157 @@
+====== AWX Kubernetes Notes ======
+
+##On TowerU
+
+<code ->
+minikube start --vm-driver=docker --addons=ingress
+</code>
+
+<code ->
+minikube status
+</code>
+
+<code ->
+kubectl get pods -A
+</code>
+
+<code ->
+kubectl port-forward service/awx-demo-service -n ansible-awx --address 0.0.0.0 10445:80
+</code>
+
+##To Get things to start after reboots
+
+# Create a service
+
+<code ->
+sudo vi /etc/systemd/system/minikube.service
+</code>
+
+#Add the below:
+
+<code ->
+[Unit]
+Description=Kickoff Minikube Cluster
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/minikube start --vm-driver=docker --addons=ingress
+RemainAfterExit=true
+ExecStop=/usr/local/bin/minikube stop
+StandardOutput=journal
+User=erik
+Group=erik
+
+[Install]
+WantedBy=multi-user.target
+</code>
+
+# Reload the daemon:
+
+<code ->
+sudo systemctl daemon-reload
+</code>
+
+# Enable the service
+
+<code ->
+sudo systemctl enable minikube.service
+</code>
+
+##That starts things, now we need to forward the ports so we can bring up the web GUI:
+
+# Create a service
+
+<code ->
+sudo vi /etc/systemd/system/minikube-forward.service
+</code>
+
+#Add the below:
+
+<code ->
+[Unit]
+Description=Forward Minikube AWX Ports
+After=minikube.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/kubectl port-forward service/awx-demo-service -n ansible-awx --address 0.0.0.0 10445:80
+RemainAfterExit=true
+ExecStop=/usr/local/bin/minikube stop
+StandardOutput=journal
+User=erik
+Group=erik
+
+[Install]
+WantedBy=multi-user.target
+</code>
+
+# Reload the daemon:
+
+<code ->
+sudo systemctl daemon-reload
+</code>
+
+# Enable the service
+
+<code ->
+sudo systemctl enable minikube-forward.service
+</code>
+
+#To get the WebUI to work
+#On the server:
+<code>
+kubectl proxy --address='172.16.4.54' --accept-hosts='^*$'
+</code>
+
+# Create a service
+
+<code ->
+sudo vi /etc/systemd/system/minikube.webui.service
+</code>
+
+#To set it up as a service:
+
+<code>
+[Unit]
+Description=Forward Minikube Web UI
+After=minikube-forward.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/kubectl proxy --address='172.16.4.54' --accept-hosts='^*$'
+RemainAfterExit=true
+ExecStop=/usr/local/bin/minikube stop
+StandardOutput=journal
+User=erik
+Group=erik
+
+[Install]
+WantedBy=multi-user.target
+</code>
+
+# Reload the daemon:
+
+<code ->
+sudo systemctl daemon-reload
+</code>
+
+# Enable the service
+
+<code ->
+sudo systemctl enable minikube.webui.service
+</code>
+
+#Clean Up Options
+
+<code>
+docker system prune
+
+minikube ssh -- docker system prune
+</code>
+
+==== REF: ====
+
+https://docs.docker.com/config/pruning/#prune-images
+
+

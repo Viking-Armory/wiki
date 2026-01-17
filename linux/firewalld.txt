@@ -1,0 +1,11 @@
+**## Basic firewalld Commands ##**\\
+
+firewall-cmd --list-all\\
+ 
+firewall-cmd  --add-service snmp --permanent\\
+Or\\
+firewall-cmd --permanent --add-port=161/udp\\
+ 
+firewall-cmd --reload\\
+ 
+firewall-cmd --list-all\\

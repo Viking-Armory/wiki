@@ -1,0 +1,47 @@
+====== Setting Up UPS Monitor with Nut SNMP ======
+
+Edit the nut.conf:\\
+
+<code>
+sudo vi /etc/nut/nut.conf
+</code>
+
+Add the following lines to the end:\\
+
+<code>
+DRIVERS="snmp-ups"
+</code>
+
+Edit the ups.conf:\\
+
+<code>
+sudo vi /etc/nut/ups.conf
+</code>
+
+Add the following lines to the end:\\
+
+<code>
+[snmp]
+  driver = snmp-ups
+  port = <UPS_IP_ADDRESS>
+  community = <COMMUNITY>
+  snmp_version = v2c
+  pollfreq = 15
+  desc = "BamBu Printer UPS"
+</code>
+
+Replace <UPS_IP_ADDRESS> with the IP address of your UPS device / Raspberry Pi\\
+
+Replace <COMMUNITY> with the Community you are using \\
+
+**Not sure if this is needed yet:**\\
+
+<code>
+sudo vi /etc/snmp/snmpd.conf
+</code>
+
+Add extend line to the ens of the file:\\
+
+<code>
+extend BamBu /usr/bin/nut-upsmon
+</code>

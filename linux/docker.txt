@@ -1,0 +1,78 @@
+=== Docker | Podman Notes ===
+
+##Install Docker:
+ 
+<code>
+sudo dnf install docker
+</code> 
+
+##Get an image, RHEL 8 in this case:
+ 
+<code>
+sudo docker pull registry.access.redhat.com/ubi8/ubi:latest
+</code>
+
+##Add ENV SMDEV_CONTAINER_OFF=1 to: (you have to be root)
+ 
+<code>
+dzdo vi /var/lib/containers/storage/overlay/ecf6a89969f55913ddb3946ec16ae6f081ea6da1bbbdd9405acc637c25409b91/diff/root/buildinfo/Dockerfile-ubi8-8.9-1136
+</code>
+
+##Show Docker images
+
+<code>
+docker images
+</code>
+
+##Start basic image up
+ 
+<code>
+sudo docker run -it --name test8 registry.access.redhat.com/ubi8/ubi
+</code>
+
+##Start web image forwarding 80 on the server to 8080 on the container
+
+<code>
+sudo docker run -itd --name test8-web -p 8080:80 registry.access.redhat.com/ubi8/ubi (test 1)
+</code>
+ 
+<code>
+sudo docker run -itd --name test8-web2 -p 8081:80 registry.access.redhat.com/ubi8/ubi (test 2)
+</code>
+ 
+<code>
+/usr/sbin/httpd
+</code>
+ 
+##See what is running
+ 
+<code>
+sudo docker ps
+</code>
+ 
+##Install httpd on host and container:
+ 
+<code>
+sudo dnf install httpd
+</code>
+
+##To get to the terminal
+
+<code>
+docker exec -it test8-web1 bash
+</code>
+ 
+##Remove container
+ 
+<code>
+sudo docker rm test8
+</code>
+ 
+<code>
+sudo docker rm --force test8-web
+</code>
+
+
+####REF://
+
+https://yashlahoti.medium.com/steps-to-install-docker-in-rhel8-red-hat-enterprise-linux-51c982621118

@@ -1,0 +1,3 @@
+====== eBay Selling Items Notes ======
+
+  * [[selling:ebay:glocksmith_block|GlockSmith Block]]

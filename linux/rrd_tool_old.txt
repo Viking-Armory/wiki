@@ -1,0 +1,32 @@
+====== RRD Notes ======
+
+**## rrdtool fix ##**\\
+
+cd /etc/temperatures/ \\
+
+sudo rrdtool dump ammo_temp.rrd ammo_temp.xml \\
+
+sudo vi ammo_temp.xml \\
+
+sudo mv ammo_temp.rrd ammo_temp.rrd.evo \\
+
+sudo rrdtool restore ammo_temp.xml ammo_temp.rrd \\
+
+sudo /usr/local/bin/temp.sh \\
+
+**## Installing rrdtool Debian ##**\\
+
+sudo apt install rrdtool \\
+
+sudo mkdir /etc/filament \\
+
+cd /etc/filament/ \\
+
+sudo rrdtool create dryer_temp.rrd -s 1800 DS:temp:GAUGE:3600:0:125 RRA:AVERAGE:0.5:1:576 RRA:AVERAGE:0.5:6:672 RRA:AVERAGE:0.5:24:732 RRA:AVERAGE:0.5:144:1460
+
+sudo rrdtool create dryer_humid.rrd -s 1800 DS:temp:GAUGE:3600:0:125 RRA:AVERAGE:0.5:1:576 RRA:AVERAGE:0.5:6:672 RRA:AVERAGE:0.5:24:732 RRA:AVERAGE:0.5:144:1460
+
+**## Tools ##** \\
+
+[[https://manpages.ubuntu.com/manpages/xenial/man1/rrdtune.1.html|https://manpages.ubuntu.com/manpages/xenial/man1/rrdtune.1.html]]
+

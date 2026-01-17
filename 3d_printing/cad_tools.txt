@@ -1,0 +1,26 @@
+<markdown>
+## CAD Tools
+
+- [AutoCAD] - 2D and 3D CAD design software (commercial)
+- [Autodesk Fusion 360] - 3D CAD, CAM, and CAE tool for product design
+    and manufacturing (free for personal / non-commercial use)
+- [Blender] - 3D modeling and sculpting app. (open source)
+- [FreeCAD]
+- [OpenSCAD]
+- [Rhinoceros 3D] - CAD application software. (commercial)
+- [Solidworks] - 3D CAD design software (commercial)
+- [SolveSpace] - Minimalist CAD software. (open source)
+- [Tinkercad] - Browser based free app for 3D design, electronics, and coding.
+
+[AutoCAD]: https://autodesk.com/products/autocad/overview
+[Autodesk Fusion 360]: https://www.autodesk.com/products/fusion-360/personal
+[Blender]: https://www.blender.org/
+[FreeCAD]: https://freecadweb.org
+[OpenSCAD]: https://openscad.org
+[Rhinoceros 3D]: https://www.rhino3d.com
+[Solidworks]: https://solidworks.com
+[SolveSpace]: https://solvespace.com
+[Tinkercad]: https://www.tinkercad.com
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

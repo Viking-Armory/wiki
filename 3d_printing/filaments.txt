@@ -1,0 +1,21 @@
+<markdown>
+## Filaments
+
+- [Creality]
+- [Elegoo]
+- [eSun]
+- [Inland] - Micro Center Specific Filament
+- [Protopasta]
+- [Printed Solid]
+- [American Filament] - American Made
+
+[Creality]: https://www.creality.com/products/creality-filament-resin
+[Elegoo]: https://us.elegoo.com/collections/filaments
+[eSun]: https://www.esun3d.com/filaments/
+[Inland]: https://www.microcenter.com/category/4294866996/filaments-and-resins
+[Protopasta]: https://www.proto-pasta.com
+[Printed Solid]: https://www.printedsolid.com/
+[American Filament]: https://americanfilament.us/
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

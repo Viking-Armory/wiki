@@ -1,0 +1,293 @@
+**## install PartKeepr Ubuntu Server 22**\\
+
+# Add php repo so we can install old version (7.1) of php\\
+
+<code>
+sudo add-apt-repository ppa:ondrej/php
+</code>
+# Update Apt\\
+
+<code>
+sudo bin/morning.sh
+</code>
+
+# Install Apache and MariaDB \\
+<code>
+sudo apt install apache2 apache2-doc curl ntp mariadb-server mariadb-client git cron mlocate htop
+</code>
+
+# Edit the Apache Conf File\\
+
+<code>
+sudo vi /etc/apache2/apache2.conf
+</code>
+
+# Edit the lines below\\
+	
+<code>
+<Directory /var/www/>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
+</code>
+
+# Secure MariaDB\\
+
+<code>
+sudo mysql_secure_installation
+</code>
+
+# Log on to MariaDB\\
+
+<code>
+sudo mysql -u root
+</code>
+
+# Run the following lines\\
+
+<code>
+mysql> CREATE USER 'PartKeepr'@'localhost' IDENTIFIED BY 'Dkt8jzsf#';
+mysql> CREATE DATABASE PartKeepr CHARACTER SET UTF8;
+mysql> GRANT USAGE ON *.* to 'PartKeepr'@'localhost';
+mysql> GRANT ALL PRIVILEGES ON PartKeepr.* TO 'PartKeepr'@'localhost';
+mysql> FLUSH PRIVILEGES;
+mysql> EXIT;
+</code>
+
+# Restart MariaDB\\
+
+<code>
+sudo systemctl restart mariadb
+</code>
+
+# Install php 7.1 and required plugins\\
+
+<code>
+sudo apt install php7.1 php7.1-apcu php7.1-apcu-bc php7.1-curl php7.1-gd php7.1-intl php7.1-ldap php7.1-mysql php7.1-dom php7.1-xml php-pear libgd-tools libgd-dev php7.1-bcmath
+</code>
+
+# Set Ubuntu to default php 7.1\\
+
+<code>
+sudo update-alternatives --config php ##set to php7
+</code>
+
+# Just to make sure we are set to php 7.1
+
+<code>
+sudo a2enmod php7.1
+</code>
+
+# Restart Apache\\
+
+<code>
+sudo systemctl restart apache2
+</code>
+
+# Change directory to Downloads
+
+<code>
+cd /home/erik/Downloads
+</code>
+
+# Get PartKeepr
+
+<code>
+wget https://github.com/partkeepr/PartKeepr/archive/1.4.0.tar.gz
+</code>
+
+##OR##\\
+
+<code>
+cp /mnt/share/Backups/inventory/1.4.0.tar.gz
+</code>
+
+# Untar it\\
+<code>
+tar xvf 1.4.0.tar.gz
+</code>
+
+# Make the web site directory\\
+
+<code>
+sudo mkdir /var/www/html/glock
+</code>
+
+# Rename parameters file\\
+
+<code>
+cp PartKeepr-1.4.0/app/config/parameters.php.dist PartKeepr-1.4.0/app/config/parameters.php
+</code>
+
+# Then copy PartKeepr to it\\
+
+<code>
+sudo cp -R PartKeepr-1.4.0/* /var/www/html/glock/
+</code>
+
+#get to the web directory\\
+
+<code>
+cd /var/www/html
+</code>
+
+# Set the correct permissions\\
+
+<code>
+sudo chown -R www-data:www-data glock
+
+sudo find glock -type d -name "*" -exec chmod 775 "{}" \;
+
+sudo find glock -type f -name "*" -exec chmod 664 "{}" \;
+</code>
+
+# Make sure rewrite is set\\
+
+<code>
+sudo a2enmod userdir rewrite
+</code>
+
+# Restart Apache\\
+
+<code>
+sudo systemctl restart apache2
+</code>
+
+# Create the Apach configuration file\\
+
+<code>
+sudo vi /etc/apache2/sites-available/001-glock.conf
+</code>
+
+# Put this in there\\
+
+<code>
+<VirtualHost *:80>
+        ServerName inventory.hohenfels.mylocal
+
+        DocumentRoot "/var/www/html/glock/web/"
+        AcceptPathInfo on
+
+        ErrorDocument 403 "<h1>Update in progress. Check later.</h1>"
+
+        <Directory /var/www/html/glock/web/>
+		Require all granted
+                AllowOverride All
+        </Directory>
+
+  ## Logging
+  ErrorLog "/var/log/apache2/partkeepr_glock_error.log"
+  ServerSignature Off
+  CustomLog "/var/log/apache2/partkeepr_glock_access.log" combined 
+</VirtualHost>
+
+</code>
+
+# Get into the below directory\\
+
+<code>
+cd /etc/apache2/sites-available/
+</code>
+
+# Make our site avaliable\\
+
+<code>
+sudo a2ensite 001-glock.conf
+</code>
+
+# Edit some php settings\\
+
+<code>
+sudo vi /etc/php/7.1/apache2/php.ini
+</code>
+
+# Find and edit the below\\
+
+<code>
+max_execution_time = 300
+
+date.timezone = America/Chicago
+</code>
+
+# Restart Apache\\
+
+<code>
+sudo systemctl restart apache2
+</code>
+
+##Download Composer and install globally\\
+
+# Get to Downloads\\
+
+<code>
+cd /home/erik/Downloads
+</code>
+
+# And get it\\
+
+<code>
+wget https://getcomposer.org/download/1.10.22/composer.phar
+</code>
+
+# Rename the composer file\\
+
+<code>
+cp composer.phar composer
+</code>
+
+# Set the correct permissions\\
+
+<code>
+chmod 755 composer
+</code>
+
+# Get it to the right spot\\
+
+<code>
+sudo cp composer /usr/bin/
+</code>
+
+# Get back to the web directory\\
+
+<code>
+cd /var/www/html/glock
+</code>
+
+# Run composer update\\
+
+<code>
+sudo /usr/bin/php7.1 /usr/bin/composer update
+
+Add the below key:
+
+ghp_Hex_Code_Here
+</code>
+
+# Run Composer install\\
+
+<code>
+sudo /usr/bin/php7.1 /usr/bin/composer install
+</code>
+
+# Set the correct permissions - Again\\
+
+<code>
+sudo chown -R www-data:www-data /var/www/html/
+
+sudo chmod -R 777 /var/www/html/glock/app
+
+sudo chmod -R 777 /var/www/html/glock/
+</code>
+
+# Finish the setup in your local browser:\\
+
+http://inventory/glock/web/setup/\\
+
+The key needed :\\
+
+<code>
+cat /var/www/html/glock/app/authkey.php
+</code>
+
+http basic//

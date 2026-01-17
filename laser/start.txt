@@ -1,0 +1,4 @@
+====== Laser Notes ======
+
+  * [[laser:norton|Norton Notes]]
+  * [[power_settings|Laser Power Settings]]

@@ -1,0 +1,14 @@
+====== Wifi Notes ======
+
+## Disable Wifi Raspberry Pi
+
+<code>
+sudo vi /boot/config.txt 
+</code>
+
+## Add to the bottom of the file:
+
+<code>
+[Wireless Disable]
+dtoverlay=disable-wifi
+</code>

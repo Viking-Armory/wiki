@@ -1,0 +1,10 @@
+==== Oil Pump ====
+
+|   |   |   |
+| %%Drain off 1-2 tbsp of oil%% | %%Beginning of every batch%% | %%See pg27, "How do I extend the life of my vacuum pump oil?"%% |
+| %%Change oil%% | %%Approx. 5-6 batches*%% | %%See pg23, "Vacuum PumpMaintenance, Oil Change"%% |
+| %%Power flush%% | %%Approx. 10-12 batches*%% | %%See pg24, "Vacuum PumpMaintenance, Power Flush" %%__[[https://youtu.be/ILVBXqg9oc8|https://youtu.be/ILVBXqg9oc8]]__ |
+| %%Remove pump cover assembly%% | %%Approx. 30-36 batches*%% | __[[https://youtu.be/bOGTh9n3NpA|https://youtu.be/bOGTh9n3NpA]]__ |
+
+*The number of batches is contingent on the food you freeze dry, the thickness, length of batches, etc.
+

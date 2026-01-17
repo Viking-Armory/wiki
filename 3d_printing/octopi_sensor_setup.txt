@@ -1,0 +1,101 @@
+====Install Temp and Humid Sensor DHT22 OctoPrint====
+
+Make sure you are updated:\\
+
+<code>
+sudo apt upgrade
+</code>
+
+Install the required packages:\\
+
+<code>
+sudo apt install build-essential python3-dev python3-openssl git libgpiod2 python3-rpi.gpio
+</code>
+
+Install the library\\
+
+<code>
+git clone https://github.com/adafruit/Adafruit_Python_DHT.git && cd Adafruit_Python_DHT
+</code>
+
+Now create a Python library with:
+
+<code>
+sudo python3 setup.py install
+</code>
+
+Change the directory to the examples directory:\\
+
+<code>
+cd ~/Adafruit_Python_DHT/examples/
+</code>
+
+run the example with code:\\
+
+<code>
+sudo ./AdafruitDHT.py 22 4
+</code>
+
+if it does not work, python might not be in the path. Try this:\\
+<code>
+sudo python3 AdafruitDHT.py 22 4
+</code>
+
+The first parameter indicates which sensor was used (22 for the DHT22) and the second indicates which GPIO it is connected to. In this example, we've connected the DHT22 to GPIO 4:\\
+
+Should look like this:\\
+
+<code>
+Temp=25.0*  Humidity=45.7%
+</code>
+
+Install Adafruit Library\\
+
+<code>
+pip3 install adafruit-circuitpython-dht
+</code>
+
+Install adafruit-blinka\\
+
+<code>
+sudo pip3 install adafruit-blinka
+</code>
+
+install the [[https://github.com/vitormhenrique/OctoPrint-Enclosure]] Plugin\\
+
+go to octoptint settings -> plugins -> enclosure\\
+
+selerc:\\
+
+{{:3d_printing:octopi_add_inputs.png?200|}}
+
+**First Input:**
+
+Label = Dryer\\
+
+select Temperature Sensor\\
+
+Sensor Type = DHT22\\
+
+Sensor Pin = 4 (Pi4 12)\\
+
+**Second Input:**
+
+Label = Box\\
+
+select Temperature Sensor\\
+
+Sensor Type = DHT22\\
+
+Sensor Pin = 21 (Pi4 25)\\
+
+**Select Advanced options and un-check Use SUDO**\\
+
+{{:3d_printing:octopi_no_sudo.png?400|}}
+
+REF:\\
+https://www.thingiverse.com/thing:2245493\\
+https://github.com/vitormhenrique/OctoPrint-Enclosure\\
+https://roboticsbackend.com/raspberry-pi-3-pins/#:~:text=The%20Raspberry%20Pi%204%20board,computer%20%E2%80%93%20the%20Raspberry%20Pi%20microprocessor.\\
+https://raspberrypi.stackexchange.com/questions/40105/access-gpio-pins-without-root-no-access-to-dev-mem-try-running-as-root\\
+

@@ -1,0 +1,99 @@
+====== Setting Up NUT ======
+
+Install the packages:\\
+
+<code>
+sudo apt update
+sudo apt install nut nut-client nut-server apache2 nut-cgi nut-snmp
+</code>
+
+Edit /etc/nut/ups.conf and add your UPS
+
+<code>
+sudo vi /etc/nut/ups.conf
+</code>
+
+Add the below stanza to the bottom:\\
+
+<code>
+[servers]
+driver = usbhid-ups
+port = auto
+desc = "BamBu Printers UPS"
+</code>
+Edit the bottom of the /etc/nut/upsmon.conf:\\
+
+<code>
+sudo vi /etc/nut/upsmon.conf
+</code>
+
+Add your line to the bottom:\\
+<code>
+# MONITOR <system> <powervalue> <user> <password> ("master"|"slave")
+MONITOR servers@localhost 1 monuser secret master
+</code>
+
+Add the same user to /etc/nut/upsd.users\\
+
+<code>
+sudo vi /etc/nut/upsd.users
+</code>
+
+add the below to the bottom:\\
+<code>
+[monuser]
+   password = secret
+   upsmon master
+</code>
+
+Edit /etc/nut/nut.conf and change the last line:\\
+<code>
+sudo vi /etc/nut/nut.conf
+</code>
+
+Add the below to the end:\\
+<code>
+MODE=netserver
+</code>
+
+Test:\\
+<code>
+sudo reboot
+</code>
+
+Check:\\
+<code>
+upsc servers@localhost
+</code>
+
+Edit /etc/nut/hosts.conf to allow CGI scrips access to the monitor. Add one line to the bottom of the file:\\
+
+<code>
+sudo vi /etc/nut/hosts.conf
+
+MONITOR servers@localhost "Server UPS"
+</code>
+
+Enable CGI in apache and restart the web server:\\
+
+<code>
+sudo a2enmod cgi
+
+sudo systemctl restart apache2
+</code>
+
+Now, you just need to convince apache that you really, really want to turn on CGI by uncommenting the following in /etc/nut/upsset.conf:\\
+
+<code>
+sudo vi /etc/nut/upsset.conf
+
+### I_HAVE_SECURED_MY_CGI_DIRECTORY
+</code>
+
+Try it:\\
+http://printmon.hohenfels.mylocal/cgi-bin/nut/upsset.cgi \\
+http://printmon.hohenfels.mylocal/cgi-bin/nut/upsstats.cgi \\
+
+REF:\\
+https://www.howtoraspberry.com/2020/11/how-to-monitor-ups-with-raspberry-pi/ 
+https://rymnd.net/blog/2018/ups-monitoring/

@@ -1,0 +1,90 @@
+**__My Torque Values:__**
+
+**__AR Compensator (Flash hider)__** No Torque, timing value with the procedure in the Army TM. Hand tight and then tighten a minimum of 90 degrees but no more than 450 degrees to timing. Don't over tighten, don't loosen.
+
+**__AR Barrel Nut__** 30 Ft. lbs. Minimum, not to exceed 80 Ft. Lbs. to align the next slot in the barrel nut. The 80 Ft. Lbs is not stated in the TM, but I don't know how you would line up the gas tube, in certain situations without going over 30 Ft. Lbs. Unless you use shims. I don't think most folks will have any laying around. This torque spec is common across the community and internet.
+
+**__AR Carrier Key Screws__** 50-58 INCH pounds torque
+
+**__AR Lower Receiver Extension (Buffer Tube/Castle Nut)__** 40 Ft. lbs for both Rifle and Carbine.
+
+**__M-LOK Accessories:__**
+
+  * For attaching metal accessories to metal hand guards: 35 in/lbs
+  * For attaching polymer or metal accessories to polymer hand guards: 15 in/lbs
+  * For attaching polymer accessories to metal hand guards: 15 in/lbs
+
+The installation torque values are not minimums, they are recommended limits. The nylon patch compound may slightly affect the torque reading if using an in/lb torque wrench.
+
+Using a small hex wrench should prevent over-tightening. Remember that the recoil lugs are doing most of the work, and excessive torque on the nuts is not required
+
+**__My Comments:__**
+
+The rest of the items in the research below I could not find in the Army TM, manufacture website or in common reference. Until I can find it, I am going with ‘tight’ and the appropriate thread lockers. ‘Tight’ might be the values listed.
+
+I am not saying that the info below is wrong or bad. I could not readily verify it. The above is what I will use, at the end of the day I am responsible for my decisions and you are responsible for yours.
+
+**__######################## RESEARCH / REFERENCE ITEMS BELOW ###########################__**
+
+%%AR Compensator (Flash hider)%%, 15-20 Ft. Lbs. Torque **%%*1%%**
+
+%%AR Compensator (Flash hider)%% %%***3** %%(No Torque, timing value)
+
+{{:ar:tm_flash_hider.png?400}}
+
+%%AR Handguard Screws%%, 20-30 inch pounds torque **%%*1%%**
+
+%%AR Gas Block Set Screws, %%25-30 inch pounds torque **%%*1%%**
+
+%%AR Barrel Nut,%% 30 Ft. lbs. Minimum, not to exceed 80 Ft. Lbs. to align the next slot in the barrel nut. **%%*1 *5%%**
+
+%%AR Barrel Nut%%, 30 Ft. lbs. %%***3** %%(I cant find the 80 Ft. Lbs. In the TM)
+
+{{:ar:tm_barrel_nut.png?400}}
+
+\\ %%AR Carrier Key Screws%%, 50-58 INCH pounds torque **%%*1 *2 *3%%**
+
+{{:ar:tm_gas_key.png?400}}
+
+%%AR Grip Screw%%, 15-20 inch pounds torque **%%*1%%**
+
+%%AR Lower Receiver Extension (Buffer Tube/Castle Nut)%%
+
+%%Rifle: 35-39 Ft. Lbs. ***1 *3%%** **
+
+** **
+
+{{:ar:tm_castle_nut_rifle.png?400}}\\
+
+%%Carbine: 38-42 foot pounds ***1 *3%%** **
+
+** {{:ar:tm_castle_nut_carbine.png?400}}  **
+
+**%%M-LOK Accessories: ***4%%**
+
+  * For attaching metal accessories to metal hand guards: 35 in/lbs  
+  * For attaching polymer or metal accessories to polymer hand guards: 15 in/lbs  
+  * For attaching polymer accessories to metal hand guards: 15 in/lbs
+
+The installation torque values are not minimums, they are recommended limits. The nylon patch compound may slightly affect the torque reading if using an in/lb torque wrench.
+
+Using a small hex wrench should prevent over-tightening. Remember that the recoil lugs are doing most of the work, and excessive torque on the nuts is not required
+
+**%%KeyMod Accessories: ***1%%**  **  **
+
+  * * Polymer to metal: 15 in-lbs   
+  * * Polymer to polymer: 15 in-lbs   
+  * * Metal to metal: 30 in-lbs  %%Picatinny Accessories: ***1%%
+
+**Ref:**
+
+%%*1%% [[https://www.youtube.com/watch?v=Ah6WISs6IfY]]
+
+%%*2%% [[https://www.youtube.com/c/InstructorChad]]
+
+%%*3%% ARMY TM 9-1005-319-23&P Nov 2008
+
+%%*4%% [[https://www.dropbox.com/s/jrf9nwxnizjy6ql/M-LOK_Tips.pdf?dl=0]] (Magpul MLOC instructions)
+
+%%*5%% [[https://www.youtube.com/watch?v=tcMqwofYTn0]] (Brownells)
+

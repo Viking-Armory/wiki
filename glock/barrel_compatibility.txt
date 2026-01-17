@@ -1,0 +1,40 @@
+| **Barrel Model** | **Compatible Model** |
+^ G17 Gen 1-4 | G17 Gen 1-4 |
+^ G17 Gen 5 | G17 Gen 5 |
+^ G17L Gen 1-3 | G17 Gen 1-4, G17L Gen 1-3 G34 Gen 1-4 |
+^ G19 Gen 1-4 | G19 Gen 1-4, G26 Gen 1-4 |
+^ G19 Gen 5 | G19 Gen 5, G19X, G26 Gen 5 G45, G47 |
+^ G19X | G19 Gen 5, G19X, G26 Gen 5 G45, G47 |
+^ G20 Gen 2-4 | G20 Gen 2-4 |
+^ G21 Gen 2-4 | G21 Gen 2-4 |
+^ G22 Gen 2-4 | G22 Gen 2-4, G31 Gen 2-4 |
+^ G22 Gen 5 | G22 Gen 5 |
+^ G23 Gen 2-4 | G23 Gen 2-4, G27 Gen 2-4, G32 Gen 2-4, G33 Gen 2-4 |
+^ G23 Gen5 | G23 Gen5, G27 Gen 5 |
+^ G24 Gen 2-3 | G22 Gen 2-3, G24 Gen 2-3, G31 Gen 2-3, G35 Gen 2-3 |
+^ G27 Gen 2-4 | G27 Gen 2-4, G33 Gen 2-4 |
+^ G27 Gen 5 | G27 Gen 5 |
+^ G31 Gen 2-4 | G22 Gen 2-4, G31 Gen 2-4 |
+^ G32 Gen 2-4 | G23 Gen 2-4, G27 Gen 2-4, G32 Gen 2-4, G33 Gen 2-4 |
+^ G33 Gen 2-4 | G27 Gen 2-4, G33 Gen 2-4 |
+^ G34 Gen 3-4 | G17 Gen 3-4, G34 Gen 3-4 |
+^ G34 Gen 5 | G17 Gen 5, G34 Gen 5 |
+^ G35 Gen 3-4 | G22 Gen 3-4, G31 Gen 3-4, G35 Gen 3-4 |
+^ G36 Gen 3 | G36 Gen 3 |
+^ G37 Gen 3-4 | G37 Gen 3-4, G38 Gen 3-4, G39 Gen 3-4 |
+^ G38 Gen 3-4 | G38 Gen 3-4, G39 Gen 3-4 |
+^ G39 Gen 3-4 | G39 Gen 3-4 |
+^ G40 Gen 4 | G20 Gen 4, G40 Gen 4 |
+^ G41 Gen 4 | G21 Gen 4, G41 Gen 4 |
+^ G42 | G42 |
+^ G43 | G43 |
+^ G43X | G43X |
+^ G44 | G44 |
+^ G45 | G19 Gen5, G19X, G45 |
+^ G47 | G47 |
+^ G48 | G43X, G48 |
+
+Non-compensated barrels are compatible in compensated pistols but compensated barrels are not compatible in non-compensated pistols. Example: G17 Barrel will work in a G17C but a G17C barrel will not work in a G17 pistol. Gen 1 and 2 frames are not designed to handle the .357 SIG, .357 SIG barrels should only be used in Gen 3 3 pin frames and Gen 4 frames. Gen 5 barrels are not compatible with older generations.\\
+
+**REF: **Book of Glock - Second Edition
+

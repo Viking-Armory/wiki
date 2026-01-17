@@ -1,0 +1,166 @@
+====== Installing DH22 Temp / Humidity Software ======
+
+Make sure you are updated:\\
+
+<code>
+sudo apt upgrade
+</code>
+
+Install the required packages:\\
+
+<code>
+sudo apt install python3-pip python3-rrdtool librrd-dev 
+
+sudo pip3 install adafruit-circuitpython-dht rrdtool --break-system-packages
+</code>
+
+Test Script:\\
+
+<code>
+# Complete Project Details: https://RandomNerdTutorials.com/raspberry-pi-dht11-dht22-python/
+# Based on Adafruit_CircuitPython_DHT Library Example
+
+import time
+import board
+import adafruit_dht
+
+# Sensor data pin is connected to GPIO 4
+sensor = adafruit_dht.DHT22(board.D4)
+# Uncomment for DHT11
+#sensor = adafruit_dht.DHT11(board.D4)
+
+while True:
+    try:
+        # Print the values to the serial port
+        temperature_c = sensor.temperature
+        temperature_f = temperature_c * (9 / 5) + 32
+        humidity = sensor.humidity
+        print("Temp={0:0.1f}ºC, Temp={1:0.1f}ºF, Humidity={2:0.1f}%".format(temperature_c, temperature_f, humidity))
+
+    except RuntimeError as error:
+        # Errors happen fairly often, DHT's are hard to read, just keep going
+        print(error.args[0])
+        time.sleep(2.0)
+        continue
+    except Exception as error:
+        sensor.exit()
+        raise error
+    
+    #Sleep 5 Min
+    time.sleep(300.0)
+</code>
+
+Test it:\\
+
+<code>
+python3 bin/temp-2.py
+</code>
+
+Working Script:\\
+
+<code>
+sudo vi bin/temperature.py
+</code>
+
+<code>
+
+import adafruit_dht
+import board
+import time
+import rrdtool
+
+# Set up the DHT22 sensor
+dht_device = adafruit_dht.DHT22(board.D4)
+
+while True:
+    # Read the temperature and humidity data
+    temperature = dht_device.temperature
+    temperature_f = temperature * (9 / 5) + 32
+    humidity = dht_device.humidity
+
+    # Update the RRD database
+    rrdtool.update('/etc/temperature/test.rrd', 'N:%s:%s' % (temperature_f, humidity))
+
+    # Sleep for 1 minute
+    time.sleep(60.0)
+    
+</code>
+
+Move to location:\\
+<code>
+sudo cp bin/temperature.py /usr/local/bin/
+
+sudo chmod 755 /usr/local/bin/temperature.py
+
+</code>
+
+Setup RRD:\\
+
+<code>
+sudo mkdir /etc/temperature
+</code>
+
+Make Database:\\
+
+<code>
+sudo rrdtool create /etc/temperature/test.rrd --step 300 \
+  DS:temperature_f:GAUGE:600:-40:80 \
+  DS:humidity:GAUGE:600:0:100 \
+  RRA:AVERAGE:0.5:1:288
+</code>
+
+Add it to Startup:\\
+
+Create file /etc/systemd/system/temperature.service\\
+
+<code>
+[Unit]
+Description=Script to start taking temperarures
+
+[Service]
+ExecStart=/usr/local/bin/temperature.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+</code>
+
+Enable Script:
+
+<code>
+sudo systemctl daemon-reload
+
+sudo systemctl enable temperature.service
+
+sudo systemctl start temperature.service
+</code>
+
+Graph it:\\
+
+<code>
+sudo rrdtool graph temperature.png --start -1d --end now \
+  DEF:temperature=/etc/temperature/test.rrd:temperature_f:AVERAGE \
+  LINE2:temperature#FF0000
+
+sudo rrdtool graph humidity.png --start -1d --end now \
+  DEF:humidity=/etc/temperature/test.rrd:humidity:AVERAGE \
+  LINE2:humidity#0000FF
+</code>
+
+Graph it in Cron:
+
+<code>
+sudo crontab -e
+
+*/5 *   *   *   *    /usr/local/bin/graph_test.sh > /dev/null 2>&1
+</code>
+
+<code>
+sudo cp bin/graph_printmon.sh /usr/local/bin/
+
+sudo chmod 750 /usr/local/bin/graph_printmon.sh
+</code>
+
+
+https://randomnerdtutorials.com/raspberry-pi-dht11-dht22-python/

@@ -1,0 +1,18 @@
+**### Updating Distro file ###**\\
+<code>
+sudo mv /usr/bin/distro /usr/bin/distro.old
+
+sudo curl -o /usr/bin/distro https://raw.githubusercontent.com/librenms/librenms-agent/master/snmp/distro
+
+sudo chmod +x /usr/bin/distro
+
+sudo systemctl restart snmpd
+</code>
+
+===== Ref =====
+
+https://docs.librenms.org/Extensions/Agent-Setup/#linux-bsd \\
+
+https://raymii.org/s/tutorials/Service_checks_in_LibreNMS_nagios_plugins.html \\
+
+https://docs.librenms.org/Extensions/Services/#debug \\

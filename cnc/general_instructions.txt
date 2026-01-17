@@ -1,0 +1,7 @@
+====== Basic Start Procedure SD Card ======
+
+  - Position and Secure Material
+  - Move bit / motor to location you want to start your work
+  - In the touch screen menu, Tool -> Position
+  - In the touch screen menu, Tool -> Probe
+  - Select file and start

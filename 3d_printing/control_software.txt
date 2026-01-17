@@ -1,0 +1,13 @@
+<markdown>
+- [Makerbot Desktop] - Discover, manage and share your 3D prints.
+- [OctoPrint] - Web interface for 3D printer.
+- [PrintRun] - Pure Python 3d printing host software.
+- [Repetier] - Place, slice, preview and print.
+
+[Makerbot Desktop]: https://www.makerbot.com/desktop
+[OctoPrint]: https://octoprint.org
+[PrintRun]: https://github.com/kliment/Printrun
+[Repetier]: https://repetier.com
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

@@ -1,0 +1,25 @@
+<markdown>
+Convert 3D models into G-Code.
+
+- [BambuStudio] - Slicer specific to Bambu Printers.
+- [CraftWare] - Free slicer for 3D printers.
+- [Cura] - Open source 3D printer / slicing GUI by Ultimaker.
+- [Kiri:Moto] - Web based slicer for 3D printers, CNC mills, and Laser cutters.
+- [KISSlicer] - Cross-platform slicer for STL files.
+- [MatterControl] - 3D printing software.
+- [OrcaSlicer] - Slicer forked from [PrusaSlicer] and [BambuStudio].
+- [PrusaSlicer] - Slicer specific to Prusa Printers.
+- [Slic3r] - Open source 3D printing toolbox.
+
+[BambuStudio]: https://bambulab.com/en/download/studio
+[CraftWare]: https://craftbot.com/craftware
+[Cura]: https://ultimaker.com/software/ultimaker-cura/
+[Kiri:Moto]: https://grid.space/kiri/
+[KISSlicer]: https://kisslicer.com
+[MatterControl]: https://github.com/MatterHackers/MatterControl
+[OrcaSlicer]: https://github.com/SoftFever/OrcaSlicer
+[PrusaSlicer]: https://www.prusa3d.com/page/prusaslicer_424/
+[Slic3r]: https://slic3r.org
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

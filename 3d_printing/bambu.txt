@@ -1,0 +1,9 @@
+**Bambu Printer Items**
+
+How to set alternate buld plates:
+
+{{:3d_printing:alternate_plate_bambu.png?400|}}
+
+{{:3d_printing:alternate_plate_bambu_2.png?400|}}
+
+

@@ -1,0 +1,6 @@
+====== Freeze Drying ======
+
+[[freeze_dry:Maintenance]] \\
+[[freeze_dry:Candy_Recipe]] \\
+[[freeze_dry:food_Recipe| Food Recipes]]
+

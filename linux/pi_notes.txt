@@ -1,0 +1,13 @@
+====== Raspberry Pi Notes ======
+
+##Pi Hardware Info\\
+
+<code>
+cat /proc/cpuinfo
+</code>
+
+##Pi Memory Info\\
+
+<code>
+cat /proc/meminfo
+</code>

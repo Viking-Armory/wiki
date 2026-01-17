@@ -1,0 +1,40 @@
+**## Linux Troubleshooting ##**\\
+
+**## SELinux**\\
+
+sudo dnf install setroubleshoot policycoreutils-python-utils\\
+journalctl -t setroubleshoot\\
+
+ausearch -m AVC,USER_AVC,SELINUX_ERR,USER_SELINUX_ERR -ts recent\\
+
+sudo fixfiles -F onboot\\
+
+**## Setting Time**\\
+
+sudo timedatectl set-ntp no\\
+sudo timedatectl set-time 07:44:00\\
+sudo timedatectl set-ntp yes\\
+
+**## SNMP Ubuntu fix**\\
+ 
+sudo vi /usr/lib/systemd/system/snmpd.service\\
+<code>
+[Unit]
+Description=Simple Network Management Protocol (SNMP) Daemon.
+#After=network.target
+After=network-online.target
+ConditionPathExists=/etc/snmp/snmpd.conf
+</code>
+sudo systemctl daemon-reload//
+
+**##Finding Pi Hardware Version**\\
+
+cat /proc/device-tree/model\\
+\\
+
+**##Fixing apt advertisements from Ubuntu 22 and up##**\\
+
+mkdir -p relocated_apt\\
+sudo mv /etc/apt/apt.conf.d/20apt-esm-hook.conf ~/relocated_apt/. \\
+
+

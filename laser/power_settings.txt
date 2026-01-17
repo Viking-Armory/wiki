@@ -1,0 +1,23 @@
+===== Bamboo (Dollar Tree Cutting Board) =====
+
+40 Watt Diode\\  Air Off
+
+**Line Engrave**
+
+Power = 50\\  Speed = 60
+
+**Fill Engrave**
+
+Power = 80\\  Speed = 460
+
+===== Leather =====
+
+40 Watt Diode\\  Air Off
+
+**Line Engrave**
+
+Power = 50\\  Speed = 60
+
+**Fill Engrave**
+
+Power = ??\\  Speed = ??

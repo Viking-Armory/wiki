@@ -1,0 +1,11 @@
+<markdown>
+## Marketplaces
+
+- [Microscape] - Minature scale 3D printed architectural models.
+- [iGo3D] - 3D printing online store.
+
+[Microscape]: https://microscape.co
+[iGo3D]: https://igo3d.com
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

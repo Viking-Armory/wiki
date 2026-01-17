@@ -1,0 +1,19 @@
+^ Common Parts              ^
+| 3.5 pound connector       |
+| 5 pound connector         |
+| 8 pound connector         |
+| Channel liner             |
+| depressor plunger spring  |
+| firing pin safety spring  |
+| firing pin spacer sleeve  |
+| firing pin spring         |
+| front sight               |
+| magazine catch spring     |
+| rear sight adjustable     |
+| slide cover plate         |
+| spring cups               |
+| trigger housing pin       |
+| trigger pin               |
+| trigger spring / coil     |
+| trigger spring / NY1      |
+| trigger spring / NY2      |

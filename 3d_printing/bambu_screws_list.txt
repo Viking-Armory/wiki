@@ -1,0 +1,24 @@
+====== Screws Information ======
+
+| **Item Number** | **Item Name** | **QTY** | **Location** |
+| **1** | ST3-4.5 | 10 | Rear Panel and the Front Cover (Front) |
+| **2** | BT3-6 | 20 | P1S panels and the Z-axis Timing Pulley |
+| **3** | M3-6 | 20 | XY/Z Motor and the X1 AP Board |
+| **4** | BT2-8 | 10 | AMS first stage feeder, the MC board, and the Excess chute |
+| **5** | BT3-8 | 10 | Heatbed Unit and the AMS Main Frame |
+| **6** | M3-14 | 10 | Driven gear of the Extruder Unit |
+| **7** | MG2.5-13 | 10 | Cutter lever |
+| **8** | MG3-14 | 5 | Hotend |
+| **9** | MG2.5-15 | 5 | Hotend Cooling Fans |
+| **10** | BTG2-6 | 10 | PTEF tube bracket |
+| **11** | BT3-5 | 10 | Rear Panel and the Front Cover (Rear) |
+| **12** | M3-4.5 | 20 | X1C Panels |
+| **13** | ST2-3.5 | 10 | P1S Panels (Upper) |
+| **14** | M1.6-4 | 10 | TH Board FPC Cable of X1C toolhead PCBs |
+| **15** | BT2-5 | 20 | Toolhead housing and PCBs |
+| **16** | The pressing plate | 5 | Extruder Gear Assembly |
+| **17** | 0.9x11 mm Helical Compression Spring | 5 | Extruder Gear Assembly |
+| **18** | M3-23 | 5 | For the AMS Filament Buffer |
+
+[[https://wiki.bambulab.com/en/filament-acc/acc/screw-kit-x1-p1]]
+[[https://us.store.bambulab.com/collections/spare-screws-x1-series/products/screws-kit-x1-series-p1-series-and-ams]]

@@ -1,0 +1,55 @@
+<markdown>
+From 3D printer manufacturer:
+
+- [Thingiverse] - (from Ultimaker)
+- [Printables] - (from Prusa Research)
+- [Makerworld] - (from Bambu Lab)
+
+Independent:
+
+- [3D Kitbash] - Premium 3D-printable 3D models of toys.
+- [3D Via]
+- [Astroprint]
+- [CGtrader]
+- [Cults] - Find, share and sell 3D print files.
+- [Free3D] - Free and premium 3D models.
+- [GrabCAD]
+- [MyMiniFactory] - 3D print files for tabletop gaming, toys, gadgets.
+- [Pinshape] - Find, share and sell 3D print files.
+- [Redpah]
+- [Repables]
+- [Sculpteo]
+- [Shapeways]
+- [SketchFab]
+- [TF3DM]
+- [Turbosquid]
+
+Self-Hostable:
+
+- [Manyfold]
+
+
+[3D Kitbash]: https://3dkitbash.com
+[3D Via]: https://www.3ds.com/products/3dvia
+[Astroprint]: https://www.astroprint.com/
+[CGtrader]: https://www.cgtrader.com/
+[Cults]: https://cults3d.com
+[Free3D]: https://free3d.com
+[GrabCAD]: https://grabcad.com
+[Makerworld]: https://makerworld.com/en
+[Manyfold]: https://github.com/manyfold3d/manyfold
+[MyMiniFactory]: https://www.myminifactory.com/
+[Pinshape]: https://pinshape.com
+[Printables]: https://www.printables.com
+[Redpah]: https://redpah.com
+[Repables]: https://repables.com
+[Sculpteo]: https://www.sculpteo.com
+[Shapeways]: https://www.shapeways.com
+[SketchFab]: https://sketchfab.com
+[TF3DM]: https://tf3dm.com
+[Thingiverse]: https://thingiverse.com
+[Turbosquid]: https://www.turbosquid.com
+[YouMagine]: https://youmagine.com
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

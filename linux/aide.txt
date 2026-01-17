@@ -1,0 +1,15 @@
+**## Update AIDE Red Hat ##**\\
+
+<code>
+sudo aide --update
+sudo mv /var/lib/aide/aide.db.new.gz /var/lib/aide/aide.db.gz
+sudo /etc/cron.daily/aide
+</code>
+
+**## Update AIDE Ubuntu ##**\\
+
+<code>
+sudo /usr/bin/aide.wrapper -u
+sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
+sudo /etc/cron.daily/aide
+</code>

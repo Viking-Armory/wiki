@@ -1,0 +1,14 @@
+After getting everything installed the way you want it make sure you back it up. I like to make a complete ‘dd’ copy of my SD card. Do a df to find out what your SD card is mounted as and then umount it. Then:
+
+<code ->
+sudo dd bs=4M if=/dev/sdb of=raspbian.img
+</code>
+
+I then zip up the new image. I got a 30+ GB image to a 1.2GB zip file.
+
+To restore:
+
+<code ->
+sudo dd bs=4M if=raspbian.img of=/dev/sdb
+</code>
+

@@ -1,0 +1,16 @@
+**## install epel RH8**\\
+<code>
+sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms\\
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm\\
+</code>
+**## install epel RH9**\\
+<code>
+sudo subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms\\
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm\\
+</code>
+**## fix broken install**\\
+<code>
+sudo rm /etc/yum.repos.d/epel*\\
+sudo dnf remove epel-release-8-18.el8.noarch\\
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm\\
+</code>

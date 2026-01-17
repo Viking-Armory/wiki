@@ -1,0 +1,26 @@
+====== 3D Printing Notes ======
+
+  * [[3d_printing:pid_tune|PID Tuning]]
+  * [[3d_printing:octoprint-cli|Installing Octopi-CLI]]
+  * [[3d_printing:octopi_sensor_setup|Enclosure Setup]]
+  * [[3d_printing:post_hotend_replacement|Post Hot End Replacement]]
+  * [[3d_printing:sites|Resource Web Sites]]
+  * [[3d_printing:3d_printer_brands|3D Printer Brands]]
+  * [[3d_printing:cad_tools|CAD Tools]]
+  * [[3d_printing:control_software|Control Software]]
+  * [[3d_printing:file_formats|3D Printing File Formats]]
+  * [[3d_printing:slicer|Slicers]]
+  * [[3d_printing:scanner|Scanners]]
+  * [[3d_printing:online_3d_model_repos|Model Repositories]]
+  * [[3d_printing:online_tools|Online Tools]]
+  * [[3d_printing:printing_services|On Demand Printing Services]]
+  * [[3d_printing:marketplaces|Market Places]]
+  * [[3d_printing:3d_printing_price_comparison|On Demand 3D Printing Price Comparison]]
+  * [[3d_printing:search_engine|Search Engines]]
+  * [[3d_printing:technologies|Technologies]]
+  * [[3d_printing:education|Education]]
+  * [[3d_printing:filaments|Fillaments]]
+  * [[3d_printing:bambu|Bambu Printer Items]]
+  * [[3d_printing:bambu_screws_list| Bambu Screws List]]
+
+

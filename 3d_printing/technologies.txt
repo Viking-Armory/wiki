@@ -1,0 +1,12 @@
+<markdown>
+## Technologies
+
+- [Carbon3D] - Balancing the interaction of light and oxygen for fast resin based 3D printing.
+- [iopscience.iop.org/article/10.1088] - 3D printed components with ultrasonically arranged microscale structure.
+
+[Carbon3D]: https://carbon3d.com
+[iopscience.iop.org/article/10.1088]:
+  https://iopscience.iop.org/article/10.1088/0964-1726/25/2/02LT01
+</markdown>
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

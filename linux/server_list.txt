@@ -1,0 +1,63 @@
+**## Server List ##**\\
+
+**ubuntus** \\
+
+| hq6       | hq6.hohenfels.mylocal       |
+| viking-1  | viking-1.hohenfels.mylocal  |
+
+\\ **Servers** \\
+
+| webu    | webu.hohenfels.mylocal    |
+| camu    | camu.hohenfels.mylocal    |
+| monu    | monu.hohenfels.mylocal    |
+| toweru  | toweru.hohenfels.mylocal  |
+| nagu    | nagu.hohenfels.mylocal    |
+
+**raspberry pi**\\
+
+| k2_mon    | Raspberry Pi 2 Model B Rev 1.5  |
+| House     | Raspberry Pi 3 Model B Rev 1.2  |
+| Shop      | Raspberry Pi 3 Model B+         |
+| Test      | Raspberry Pi 4 Model B          |
+| printmon  | Raspberry Pi 4 Model B Rev 1.2  |
+
+**printers**\\
+
+| dora  | dora.hohenfels.mylocal  | Raspberry Pi 4 Model B Rev 1.5  | 8GB RAM  |
+
+**Spares**
+
+| spare   | barn.hohenfels.mylocal   | Raspberry Pi 2 Model B Rev 1.2  | 8MB RAM  |
+| spare   | NA                       | Raspberry Pi 2 Model B Rev 1.1  | 8MB RAM  |
+| spare   | attic.hohenfels.mylocal  | Raspberry Pi 2 Model B Rev 1.1  | 8MB RAM  |
+| Yellow  | OctoPi                   |                                 |          |
+| Orange  | OctoPi                   |                                 |          |
+
+\\ **cluster ssh**\\
+
+ubuntus =  hq6 hohenfelsjane
+
+servers = webu camu monu toweru nagu
+
+pi = printmon shop house office k2mon
+
+printers = dora
+
+vm = monu webu camu toweru nagu
+
+clusters = ubuntus printers vm pi servers\\  \\
+
+====== Raspberry Pi Notes ======
+
+##Pi Hardware Info\\
+
+<code ->
+cat /proc/cpuinfo
+</code>
+
+##Pi Memory Info\\
+
+<code ->
+cat /proc/meminfo
+</code>
+

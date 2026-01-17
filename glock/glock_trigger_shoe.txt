@@ -1,0 +1,58 @@
+{{:glock_trigger_shoe_screw_measurements_front_watermark.png?200&direct }}
+
+{{ :glock_trigger_shoe_back_measurements_watermark.png?200&direct }}
+
+The above are average measurements. It is polymer, it moves so you will not get consistent measurements. They are mass produced and can vary in size between batch runs. The trigger I had at the time had the above measurements. Yours might vary. “A” was my distance to the center of the trigger bar slot.
+
+We want to get the screw hole centered in front of the trigger bar slot (A) left to right and at the height of the front curve.
+
+You are going to need **Standard **Trigger:
+
+  * 2 - 56 3/16 long stainless steel socket set screw
+  * 2 - 56 3/8 long stainless steel socket set screw for trigger bar
+  * .035 Allen Wrench
+  * #50 drill bit
+  * 2 - 56 tapered tap
+
+You are going to need **Performance** Trigger:
+
+  * 2 - 56 3/16 long stainless steel socket set screw
+  * 2 - 56 3/8 long stainless steel socket set screw for trigger bar
+  * .035 Allen Wrench
+  * #50 drill bit
+  * 2 - 56 tapered tap
+
+Using the #50 drill bit, drill a hole 9 mm down and center of the trigger bar slot. Make sure it is straight. I use my Dremel Drill press to do this. Slowly work the 2 – 56 tap through it.
+
+Front Shot:
+
+{{:glock_trigger_mod_28.jpg?200&direct}}
+
+Looks pretty centered:
+
+{{:glock_trigger_mod_24.jpg?200&direct}}
+
+While I am at it, On the trigger shoe, I drilled and tapped the safety and trigger bar holes with the above tools and threaded in 2 – 56 x 3/8” set screws. I also clean up the hole on the trigger bar with a #44 then a #43 drill bit
+
+{{:glock_trigger_mod_25.jpg?200&direct}}
+
+Once I am confident that everything is setup correctly, I will seal the deal with Loctite 425
+
+I modified the safety on this trigger as well
+
+Here is what the trigger safety looks like unmodified:
+
+{{:glock_trigger_sfty_front_final.png?200&direct}}
+
+There are 4 different cuts I am going to try.
+
+{{:trigger_sfty_front_cut_combined.png?200&direct}}
+
+Never cut off more than shown in the last example.
+
+\\ Here is the start of my testing:
+
+{{:glock_trigger_mod_27.jpg?200&direct}}
+
+Ref: [[https://www.youtube.com/watch?v=0imIjwzq5Wo]]
+

@@ -1,0 +1,56 @@
+**#PID Hotend Autotune\\
+#Hotend Autotune\\
+#m303 = Command\\
+#c5 = number of cycles\\
+#s220 = temp to get to**\\ 
+
+<code>
+m303 c5 s220
+</code>
+
+**#Write it to eprom**\\
+
+<code>
+m301 pNN.NN iN.NN dNN.NN
+</code>
+
+**#Save it**\\
+
+<code>
+m500
+</code>
+
+**#Reboot printer**\\
+
+**#Check your work**\\
+
+<code>
+m503
+</code>
+
+**#Bed Auto Tune - Same as above**\\
+
+<code>
+m303 c5 e-1 s60
+</code>
+
+**#Write it to eprom**\\
+
+<code>
+m304 pNN.NN iN.NN dNN.NN
+</code>
+
+**#Save it**\\
+
+<code>
+m500
+</code>
+
+**#Reboot printer**\\
+
+**#Check your work**\\
+
+<code>
+m503
+</code>
+

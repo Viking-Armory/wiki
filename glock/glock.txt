@@ -1,0 +1,4 @@
+====== Glock Items ======
+
+[[glock:glock_trigger_shoe|Glock Trigger Shoe Notes]]\\ [[glock:common_parts|Common Glock Parts]]\\ [[glock:frame_reference|Glock Frame Reference]]\\ [[glock:slide_compatibility|Glock Slide Compatibility]]\\ [[glock:mag_compatability|Glock Magazine Compatibility]]\\ [[glock:barrel_compatibility|Glock Barrel Compatability]]\\ [[glock:model_to_caliber|Model to Caliber]]\\
+

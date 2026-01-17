@@ -1,0 +1,74 @@
+**## Download Video:**\\
+
+<code ->
+cd /mnt/share/Videos/Tmp_Video/music/
+</code>
+
+**##Removing Meta Data from files##**\\
+
+<code ->
+exiftool -progress -r -overwrite_original -all= -copyright="NONEYA LLC" /mnt/share/Tmp
+</code>
+
+**##Check Format:** \\
+
+<code ->
+/usr/bin/yt-dlp -F https://youtu.be/
+</code>
+
+**##DOWNLOAD SINGLE VIDEO:** \\
+
+<code ->
+/usr/bin/yt-dlp -f mp4 -ciw -v https://youtu.be/labbla
+</code>
+
+**##DOWNLOAD PLAYLIST:** \\
+
+<code ->
+/usr/bin/yt-dlp -i -f mp4 --yes-playlist https://youtube.com/playlist?list=BlaBla
+</code>
+
+**##Copy to mp3 for music MULTIPLE:** \\
+
+<code ->
+for file in *.mp4; do ffmpeg -i "$file" "${file%.mp4}".mp3; done
+</code>
+
+**##Copy to mp3 for music - SINGLE:**\\
+
+<code ->
+ffmpeg -i original.mp4 new.mp3
+</code>
+
+**###################**\\
+
+**#Reducing Images**\\
+
+<code ->
+mogrify -resize 800x600 /current/location/of/files/*.jpg
+</code>
+
+##Example mogrify -resize 800x600 /mnt/share/Armory/Web\ Documents/Barrel\ Check/reduced/*.jpg\\
+
+**###################**\\
+
+**#Converting Videos from MOV to MP4**\\
+
+<code ->
+ffmpeg -i original.MOV new.mp4
+</code>
+
+**#with no Audio**\\
+
+<code ->
+ffmpeg -i original.MOV -an new.mp4
+</code>
+
+**###################**\\
+
+**#Getting a list of files for a directory**\\  #cd to the directory\\
+
+<code ->
+find ./  -printf "%f\n" > video.csv
+</code>
+

@@ -1,0 +1,10 @@
+^   ^ FULL  ^ COMPACT  ^ SUBCOMPACT  ^ SLIMLINE  ^ X-OVER  ^ COMPETITION  ^ LONGSLIDE  ^
+^ .380 Auto  |   | G25  | G42  | G42  |   |   |   |
+^ 9x19 mm  | G17, G17MOS, G47  | G19, G19 MOS, G19X, G45, G45 MOS, G48, G48 MOS  | G26, G43X, G43X MOS  | G43,  G43X, G43X MOS, G48, G48 MOS  | G19X, G43X, G45, G45 MOS  | G34, G34 MOS  | G17L  |
+^ .357 Sig  | G31  | G32  | G33  |   |   |   |   |
+^ .40 S&W  | G22, G22 MOS  | G23, G23 MOS  | G27  |   |   | G35  | G24  |
+^ 10mm Auto  | G20, G20SF, G20 MOS  |   | G29, G29SF  |   |   |   | G40 MOS  |
+^ .45 GAP  | G37  | G38  | G39  |   |   |   |   |
+^ .45 Auto  | G21, G21SF, G21 MOS  |   | G30, G30S, G30SF, G36  | G36  |   | G41, G41 MOS  |   |
+^ .22 LR  |   | G44  |   |   |   |   |   |
+

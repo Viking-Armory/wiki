@@ -1,0 +1,59 @@
+| **Gen 1 thru 4** |   |
+| **Magazine** | **Model** |
+| G17 | G17, G17L, G19, G26, G34 |
+| G17L | G17, G17L, G19, G26, G34 |
+| G18 | G17, G17L, G19, G26, G34 |
+| G19 | G19,G26 |
+| G19X | G19X |
+| G20 | G20, G29, G40 |
+| G21 | G21, G30, G41 |
+| G22 | G22, G23, G24, G31, G32, G33, G35 |
+| G23 | G23, G27, G32, G33 |
+| G24 | G22, G23, G24, G31, G32, G33, G35 |
+| G25 | G25, G28 |
+| G26 | G26 |
+| G27 | G27, G33 |
+| G28 | G28 |
+| G29 | G29 |
+| G30 | G30 |
+| G31 | G22, G23, G24, G31, G32, G33, G35 |
+| G32 | G23, G27, G32, G33 |
+| G33 | G27, G33 |
+| G34 | G17, G17L, G19, G26, G34 |
+| G35 | G22, G23, G24, G31, G32, G33, G35 |
+| G36 | G36 |
+| G37 | G37, G38, G39 |
+| G38 | G38, G39 |
+| G39 | G39 |
+| G40 | G20, G29, G40 |
+| G41 | G21, G30, G41 |
+| G42 | G42 |
+| G43 | G43 |
+
+| **Gen 5** ||
+| **Magazine** | **Model** |
+| G17 | G17, G19, G26, G34 |
+| G19 | G19, G26 |
+| G19X | G19X |
+| G22 | G22, G23, G27 |
+| G23 | G23, G27 |
+| G26 | G26 |
+| G27 | G27 |
+| G34 | G17, G19, G26, G34 |
+| G43X | G43X, G48 |
+| G45 | G17, G45 |
+| G44 | G44 |
+| G48 | G43X, G48 |
+
+Not all Glock Magazines are compatible. Gen 1 and Gen 2 magazines are notched on the right side for the magazine release. Gen 3 are notched on the right side for the magazine release. Some variants of Gen 3 magazines can also include an additional notch in front of the magazine for ambidextrous magazine release models.\\
+
+Gen 1, Gen 2, and Gen 3 magazines will interchange as long as the magazine release is in the standard right hand configuration. The exception is ambidextrous magazine release models.\\
+
+Gen 4 magazines are notched on the left and right side for the reversible magazine release, and can also include an additional notch in front of the magazine for the ambidextrous magazine release. Gen 4 magazine are compatible with Gen 1, Gen 2, Gen 3 Models.\\
+
+Gen 5 magazines are notched on both sides for the reversible magazine release and include an orange follower, raised feed lip, and enhanced floor plate.\\
+
+**REF: **
+
+Book of Glock - Second Edition\\
+

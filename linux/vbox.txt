@@ -1,0 +1,16 @@
+**## Virtual Box CLI Commands ##**\\
+
+**All Commands run without sudo**\\
+
+#Check VM Status\\
+\\
+VBoxManage list vms -l | grep -e ^Name: -e ^State | sed s/\ \ //g | cut -d: -f2-\\
+\\ 
+# Start Server\\
+\\
+VBoxManage startvm "WebU" --type headless\\
+\\
+# Stop Server\\
+\\
+VBoxManage controlvm "WebU" poweroff --type headless\\
+

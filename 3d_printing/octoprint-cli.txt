@@ -1,0 +1,45 @@
+====== Installing Octopi-CLI ======
+
+<code>
+pip3 install octoprint-cli
+</code>
+
+**Edit file:**\\
+<code>
+vi /home/erik/.local/bin/config.ini
+</code>
+
+**Add this in, making sure the server name and ApiKey are correct:**\\
+
+<code>
+[server]
+;Set OctoPrint server address and x-api-key
+ServerAddress = octopi-blue.hohenfels.mylocal
+ApiKey = CCFFFF917E1843DA9ADB601E1F6C1AFE
+
+[preferences]
+;Set if the program uses colored or formatted text, this setting is turned off on windows due to cmd and powershell limitations
+FormattedText = true
+;Set if the program should check for updates
+UpdateCheck = true
+
+[printer]
+;Set maximum temperature that printer can be set to
+MaxExtruderTemp = 250
+MaxBedTemp = 85
+</code>
+
+**Test**\\
+<code>
+octoprint-cli print status
+</code>
+
+Copy to /usr/local/bin/\\
+<code>
+sudo cp /home/erik/.local/bin/config.ini /usr/local/bin/
+</code>
+
+== REF: ==
+
+https://pypi.org/project/octoprint-cli/
+

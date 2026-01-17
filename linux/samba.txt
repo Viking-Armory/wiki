@@ -1,0 +1,10 @@
+====== Setting up Samba Ubuntu 22 ======
+
+sudo apt update
+
+sudo apt install samba
+
+systemctl status smbd
+
+sudo smbpasswd -a erik
+

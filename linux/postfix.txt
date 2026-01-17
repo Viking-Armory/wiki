@@ -1,0 +1,23 @@
+====== Postfix Settings ======
+
+##Re-Configure Postfix on Debian Based systems
+
+<code>
+sudo dpkg-reconfigure postfix
+</code>
+
+##Add to aliases:
+
+<code>
+sudo vi /etc/aliases
+</code>
+
+<code>
+root: erik@viking-1.hohenfels.mylocal
+</code>
+
+##Then read it in:
+
+<code>
+sudo newaliases
+</code>

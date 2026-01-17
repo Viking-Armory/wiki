@@ -1,0 +1,20 @@
+Thingiverse - https://www.thingiverse.com/ \\
+Makerworld - https://makerworld.com/ \\
+Printables - https://www.printables.com/ \\
+Cults - https://cults3d.com/ \\
+CG Trader - https://www.cgtrader.com/3d-print-models \\
+Sketchfab - https://sketchfab.com/store/3d-models/stl \\
+3D Export - https://3dexport.com/ \\
+MyMiniFactory - https://www.myminifactory.com/ \\
+Holy Grail - https://github.com/ad-si/awesome-3d-printing \\
+Thangs - https://thangs.com/ \\
+Yeggi - https://www.yeggi.com/ \\
+FAB365 - https://fab365.net/ \\
+Gambody - https://www.gambody.com/ \\
+All3DP News - https://all3dp.com/ \\
+TCT Magazine - https://www.tctmagazine.com/topics/3D-printing-news/ \\
+3DPrint.com - https://3dprint.com/ \\
+NASA 3D Models - https://nasa3d.arc.nasa.gov/models/printable \\
+SubReddit -   / 3dprinting  \\
+
+REF: [[https://github.com/ad-si/awesome-3d-printing]]

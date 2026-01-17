@@ -1,0 +1,13 @@
+**### Installing phpMyAdmin RH9 ###**\\
+
+sudo dnf install phpMyAdmin\\
+
+vi /etc/httpd/conf.d/phpMyAdmin.conf\\
+# line 13 : add access permission for your internal nwetwork if you need\\
+
+Require ip 127.0.0.1 172.16.4.0/24\\
+
+systemctl restart httpd \\
+
+**### Installing phpMyAdmin Ubuntu 22 ###**\\
+sudo apt install phpmyadmin\\
